@@ -1,0 +1,98 @@
+/*
+Copyright 2019.
+*/
+/* 
+    Created on : Oct 10, 2019, 1:49:33 PM
+    Author     : Hiram K <hiram.kamau@outlook.com>
+*/
+/** Montserrat Regular **/
+@font-face {
+    font-family: 'Montserrat Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/montserrat/Montserrat-Regular.ttf);
+}
+/** Montserrat Medium **/
+@font-face {
+    font-family: 'Montserrat Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: url(../fonts/montserrat/Montserrat-Medium.ttf);
+}
+/** Montserrat Bold **/
+@font-face {
+    font-family: 'Montserrat Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/montserrat/Montserrat-Bold.ttf);
+}
+.root {
+    -fx-pref-width: 580px;
+    -fx-min-width: -fx-pref-width;
+    -fx-pref-height: 427px;
+    -fx-min-height: -fx-pref-height;
+    -fx-background-color: #f8f9fa;
+    -fx-padding: 38px 40px 40px 38px;
+}
+
+.title {
+    -fx-max-width: infinity;
+    -fx-color: #4e4f53;
+    -fx-font-size: 24px;
+    -fx-font-family: 'Montserrat Bold';
+}
+
+.header-box {
+    -fx-padding: 23px 0 7px 0;
+    -fx-border-color: transparent transparent #dddddd transparent;
+    -fx-border-width: 2px;
+}
+
+.header-box > .label {
+    -fx-text-fill: #a7a7a7;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Montserrat Medium';
+}
+
+.header-box > .items-label {
+    -fx-pref-width: 256px;
+}
+
+.header-box > .quantity-label {
+    -fx-pref-width: 143px;
+}
+
+.header-box > .price-label {
+    -fx-max-width: infinity;
+}
+
+.button-box {
+    -fx-padding: 28px 0 0 0;
+    -fx-spacing: 12px;
+}
+
+.button-box > .button {
+    -fx-pref-height: 32px;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-height: -fx-pref-height;
+    -fx-padding: 0 19px 0 19px;
+    -fx-font-size: 14px;
+    -fx-font-family: 'Montserrat Bold';
+    -fx-line-height: 1.29;    
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 0;
+    -fx-cursor: hand;
+}
+
+.button-box > .button:focused {
+    -fx-background-insets: 0;
+}
+
+.button-box > .add-item-button {
+    -fx-background-color: #8bc058;
+}
+
+.button-box > .empty-list-button {
+    -fx-background-color: #a7a7a7;
+}
