@@ -1,0 +1,118 @@
+/*
+Copyright 2019.
+*/
+/* 
+    Created on : Oct 10, 2019, 3:05:31 AM
+    Author     : Hiram K <hiram.kamau@outlook.com>
+*/
+
+@font-face {
+    src: url(../fonts/cascadia-code/cascadia.ttf);
+}
+
+@font-face {
+    src: url(../fonts/courier_prime_sans/courier_prime_sans.ttf);
+}
+
+@font-face {
+    src: url(../fonts/courier_prime_sans/courier_prime_sans_bold.ttf);
+}
+
+@font-face {
+    src: url(../fonts/courier_prime_sans/courier_prime_sans_italic.ttf);
+}
+
+.root {
+    -fx-base: white;
+    -fx-font-family: 'Courier Prime Sans';
+}
+
+.header-box {
+    -fx-font-size: 1.2em;
+}
+
+.label {
+    /*-fx-text-fill: #22fe20*/
+}
+
+.value-box,
+.header-box {
+    -fx-border-color: transparent transparent lightgray transparent;
+    -fx-spacing: 0.5em;
+    -fx-padding: 0.6em 0.5em 0.3em 0.5em;
+}
+
+.value-box {
+    -fx-font-family: 'Cascadia Code';
+    -fx-font-size: 0.9em
+}
+
+.add-action-box {
+    -fx-padding: 0.6em 0.5em 0.3em 0.5em;
+}
+
+.numbers-label {
+    -fx-alignment: center-right;
+}
+
+.text-label {
+    -fx-alignment: center-left;
+}
+
+.no-label {
+    -fx-pref-width: 1.5em;
+}
+
+.desc-label {
+    -fx-pref-width: 20em;
+}
+
+.unit-label {
+    -fx-pref-width: 4em;
+}
+
+.qty-label {
+    -fx-pref-width: 4em;
+}
+
+.each-label {
+    -fx-pref-width: 4em;
+}
+
+.total-label {
+    -fx-pref-width: 5em;
+}
+
+.spacer-box {
+    -fx-pref-width: 3em;
+}
+
+.add-button {
+    -fx-pref-width: 2.5em;
+    -fx-pref-height: 2.5em;
+    -fx-min-width: -fx-pref-width;
+    -fx-min-height: -fx-pref-height;
+    -fx-max-width: -fx-pref-width;
+    -fx-max-height: -fx-pref-height;
+    -fx-background-radius: 50%;
+    -fx-padding: 0;
+    -fx-cursor: hand;
+    -fx-background-insets: 0;
+    -fx-border-color: null;
+     
+}
+
+.add-button:focused {
+    -fx-background-insets: 1;
+    -fx-border-color: null;
+}
+
+.add-button:hover {
+    -fx-background-color: lightsalmon;
+}
+
+.add-button > .ikonli-font-icon {
+    -fx-icon-code: mdi-playlist-plus;
+    -fx-icon-size: 24px;
+    -fx-icon-color: green;
+}
